@@ -1,0 +1,164 @@
+.footer {
+	padding: 30px 15px;
+}
+
+.footer__wrap {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid $main;
+	padding: 0 14px;
+}
+
+.footer__col-2 {
+	max-width: 632px;
+	padding: 38px 0 10px;
+}
+
+.footer__col-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 38px 0 10px;
+}
+
+.footer__col-3 {
+	padding: 14px 0 0;
+}
+
+.col-1__top {
+	max-width: 218px;
+	color: $main;
+	font-size: 36px;
+	text-align: left;
+}
+
+.social {
+	display: flex;
+}
+
+.social__item {
+	width: 50px;
+	height: 50px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: $main;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.social__link {
+	line-height: 1;
+}
+
+.social__item i {
+	font-size: 20px;
+	color: white;
+}
+
+.social__item:not(:last-child) {
+	margin-right: 10px;
+}
+
+.footer__header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title--footer,
+.subtitle--footer {
+	color: $main;
+}
+
+.title--footer {
+	max-width: 632px;
+	font-size: 43px;
+	letter-spacing: 10px;
+	text-transform: none;
+
+	margin-bottom: 50px;
+}
+
+.title--footer span {
+	font-family: "Cormorant - Semi Bold";
+	font-size: 38px;
+	letter-spacing: normal;
+	text-transform: uppercase;
+}
+
+.subtitle--footer {
+	font-size: 36px;
+	font-style: normal;
+	letter-spacing: 0;
+	margin: 0 auto;
+
+	margin-bottom: 30px;
+}
+
+.info__tel--footer,
+.info__street--footer,
+.info__schedule--footer {
+	font-size: 30px;
+	color: $main;
+}
+
+.col-3__content {
+	display: flex;
+	justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+	.footer__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer__col-2 {
+		width: 100%;
+		order: 1;
+	}
+
+	.footer__col-1 {
+		margin: 0 auto;
+		order: 2;
+    }
+    
+    .col-1__top { 
+        display: none;
+    }
+
+    .social { 
+        margin:  0 auto;
+    }
+
+    .social__item:not(:last-child) { 
+        margin-right: 20px;
+    }
+
+	.footer__col-3 {
+		order: 3;
+	}
+
+	.title--footer span {
+		font-size: 72px;
+		line-height: 2;
+	}
+
+	.subtitle--footer {
+		margin-bottom: 22px;
+	}
+
+	.footer__col-2 .info--footer {
+        max-width: 419px;
+        margin: 0 auto;
+		text-align: left;
+    }
+    
+    .footer__col-3 { 
+        margin: 0 auto;
+    }
+}

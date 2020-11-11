@@ -1,0 +1,11 @@
+@import "../../node_modules/modern-css-reset/dist/reset.css";
+@import "./common.scss";
+@import "./colors.scss";
+
+/* Blocks */
+@import "./blocks/banner.scss";
+@import "./blocks/header.scss";
+@import "./blocks/tagline.scss";
+@import "./blocks/prices.scss";
+@import "./blocks/prices-mobile.scss";
+@import "./blocks/footer.scss";
